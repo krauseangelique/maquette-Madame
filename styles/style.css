@@ -1,0 +1,16 @@
+html{
+    background-color: aqua;
+}
+header{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blue;
+    
+}
+
+
+.green{
+    border: 1px solid green;
+}
