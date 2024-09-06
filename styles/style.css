@@ -40,6 +40,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: 1px solid rebeccapurple;
         
 }
 /* j'aurais pu aussi mettre un gap d'un rem sur le parent puisque le parent est en flex */
@@ -130,9 +131,11 @@ a{
 
 /* footer */
 footer{
-    display: block;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: var(--footer-bg-color);
+    border: 1px solid rebeccapurple;
 }
 footer ul{
     display: flex;

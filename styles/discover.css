@@ -1,9 +1,13 @@
 .discover{
     display: flex;
     height: calc(100vh - 9rem);
+    align-items: center;
 }
 .discover section{
     width: 50%;
+}
+.context{
+    align-items: center;
 }
 .context h2{
   margin-left: 0;  
