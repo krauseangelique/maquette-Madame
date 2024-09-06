@@ -1,0 +1,17 @@
+bon-a-savoir
+https://www.youtube.com/watch?v=uSG88JuOlpY le texte curviligne 
+
+button vs a lequel choisir ?
+https://developer.mozilla.org/fr/docs/Web/HTML/Element/button
+
+https://stackoverflow.com/questions/21715162/when-should-i-use-a-button-button-or-a-link-a-in-html
+
+https://www.digidop.fr/blog/lien-vs-bouton-en-html-accessibilite-web
+
+https://developer.mozilla.org/fr/docs/Web/HTML/Element/a
+
+// les enfants direct
+main > * {
+
+}
+// le main va devoir faire la hauteur total de viewport

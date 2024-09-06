@@ -1,0 +1,31 @@
+.bubble {
+    width: 250px;
+   aspect-ratio:  1;
+    border-radius: 50%;
+   
+    position: absolute;
+    
+    z-index: -999;
+    opacity: 25%;
+}
+
+.color-blue{
+    background-color: blue;
+}
+.color-pink{
+    background-color: pink;
+}
+.pos1{
+    top: 25%;
+    left: 35%;
+}
+.pos2{
+    top: 15%;
+    left: 85%;
+}
+.small{
+    width: 150px;
+}
+.medium{
+    width: 250px;
+}

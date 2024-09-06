@@ -1,16 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --main-bg-color: #2F3038; 
+    --input-bg-color: #2F3038;
+
+    --form-bg-color: #202027;
+    --footer-bg-color: #202027;
+    --main-color: rgb(253, 249, 252);
+    --accent-color: #BC3A80;
+    --form-button-color: #1867A7;
+
+    --pane-margin: 0 1rem 0 0;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
 html{
     background-color: aqua;
 }
+body{
+    background-color: lightgreen;
+    color: var(--main-color);
+    margin: 0;
+    height: 100vh;
+     overflow: hidden; /* tout ce qui dépasse à cause des bulles disparait donc plus de scrolling */
+}
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+
+   
+}
+/* header */
 header{
     display: flex;
-    
     flex-direction: row;
     justify-content: space-between;
-    background-color: blue;
-    
+        
+}
+/* j'aurais pu aussi mettre un gap d'un rem sur le parent puisque le parent est en flex */
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header h1{
+    font-size: 100%;
+    font-weight: 500;
+}
+
+li{
+    list-style: none;
+    margin: var(--pane-margin);
+    font-size: 80%;
+
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+.logo img{
+    max-height: 80%;
+    align-items: center;
+    margin: var(--pane-margin);
+}
+.menu{
+    display: flex;
+    align-items: center;
+
 }
 
 
+/* main */
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* height: 100vh; */
+    height: calc(100vh - 100px);
+   
+}
+main > *{
+    width: 50%;
+}
+
+/* Calcul de la taille de l'image de la femme */
+.femme {
+    display:flex;
+    align-items: end;
+    height: 100%;
+
+    
+} 
+.femme img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+   
+}
+.content{
+    margin-left: 1rem;
+}
+.content h2{
+    font-size: 3.5rem;
+}
+
+.content button{
+    border: var(--accent-color);
+    border-radius: 10px;
+    margin: 2rem 1rem 1rem 0rem;
+    background-color: var(--accent-color);
+    padding: 1rem;
+    color: var(--main-color);
+
+
+}
+
+a{
+    text-decoration: none;    
+}
+
+/* footer */
+footer{
+    display: block;
+    
+    background-color: var(--footer-bg-color);
+}
+footer ul{
+    display: flex;
+}
+
+/* Les média queries */
+
+@media screen and (min-width: 480px) {
+    body {
+      background-color: var(--main-bg-color);
+    }
+    header h1{
+        font-size: 2em;
+    }
+    .logo img{
+        height: 100%;
+    }
+    li{
+        font-size: 100%;
+    }
+
+    main{
+        align-items: center;
+    }
+
+    
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+  }
+
+  /* A enlever à la fin du projet */
 .green{
-    border: 1px solid green;
+    border: 1px solid greenyellow;
+}
+.red{
+    border: 1px solid red;
+}
+.blue{
+    border: 1px solid blue;
 }
